@@ -47,4 +47,5 @@ function formatResult(result) {
     if (Number.isInteger(result)) {
         return result.toString();
     }
-    return result.toFixed();}
+    return result.toFixed(10).replace(/\.?0+$/, '');
+}
